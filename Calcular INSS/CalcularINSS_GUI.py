@@ -3,6 +3,8 @@ from tkinter import ttk, messagebox
 from datetime import datetime
 
 
+#teste
+
 def calcular_inss(salario):
     inss = 0
     if salario <= 1412.00:
