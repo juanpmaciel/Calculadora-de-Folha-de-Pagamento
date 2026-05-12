@@ -3,8 +3,6 @@ from tkinter import ttk, messagebox
 from datetime import datetime
 
 
-#teste
-
 def calcular_inss(salario):
     inss = 0
     if salario <= 1412.00:
@@ -66,14 +64,14 @@ class SistemaFolhaPagamento:
         frame_principal = ttk.Frame(self.root, padding="20")
         frame_principal.pack(fill=tk.BOTH, expand=True)
 
-        titulo = ttk.Label(frame_principal, text="Sistema de Folha de Pagamento", 
+        titulo = ttk.Label(frame_principal, text="Sistema de RH - Folha de Pagamento", 
                           font=("Arial", 18, "bold"))
         titulo.pack(pady=20)
         
         frame_botoes = ttk.Frame(frame_principal)
         frame_botoes.pack(pady=30)
         
-        botao_cadastrar = ttk.Button(frame_botoes, text="Cadastrar Funcionário", 
+        botao_cadastrar = ttk.Button(frame_botoes, text="Cadastrar Novo Funcionário", 
                                     command=self.mostrar_cadastro, width=25)
         botao_cadastrar.pack(pady=10)
         
